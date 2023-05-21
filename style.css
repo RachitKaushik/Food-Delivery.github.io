@@ -1,0 +1,257 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+/* CSS Variables */
+:root{
+    --navbar-height: 59px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+
+/* Navigation Bar: Logo and Image */
+#logo {
+    margin: 10px 34px;
+
+}
+
+#logo img{
+    height: 45px;
+    margin: -13px -11px;
+
+}
+
+/* Navigation Bar:List Styling */
+#navbar ul{
+    display: flex;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+}
+
+
+
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+
+}
+
+#navbar ul li{
+    /* color: white; */
+    list-style: none;
+    font-size: 1.3rem;
+}
+ 
+#navbar ul li a{
+    color: blanchedalmond;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color: black;
+   background-color: white;
+}
+
+/* Home section */
+
+#home{
+    display: flex;
+    flex-direction: column;
+    height: 405px;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before{
+    content: "";
+    background:url(bg.jpg) no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px   ;
+    height: 75%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+}
+
+#home h1{
+    color: white;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+}
+
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.5 rem;
+    font-family: 'Bree Serif', serif;
+}
+
+/* Utility Classes */
+.h-primary{
+    font-size: 3.5rem;
+    padding: 12px;
+    font-family: 'Bree Serif', serif;
+}
+
+.h-secondary{
+    font-size: 2.3rem;
+    padding: 12px;
+    font-family: 'Bree Serif', serif;
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid whitesmoke;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.center{
+    text-align: center;
+}
+
+/* Services Section */
+#services{
+    margin: 34px;
+    display: flex;
+}
+
+#services .box{
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 3px 6px;
+    border-radius: 28px;
+    background: #f2f2f2;
+}
+
+#services .box img{
+    height: 156px; 
+    margin: auto;
+    display: block;
+}
+
+#services .box p{
+    font-family: 'Bree Serif', serif;
+}
+
+/* Client Section */
+#client-section{
+    height: 344px;
+
+}
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url(bg1.jpg) no-repeat center center/cover;
+    width:100%;
+    height: 54%;
+    z-index: -1;
+    opacity: 0.3;
+
+}
+
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#clients img{
+    height: 124px;
+}
+
+#client-item{
+    padding: 34px;
+}
+
+/* Contact section */
+
+#contact{
+    position: relative;
+}
+
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url(contact.webp) no-repeat center center/cover;
+}
+#contact img{
+    
+        text-align: center;
+        position: relative;
+        margin-top: -12%;
+        margin-left: 20%;
+        width: 52%;
+        padding: 29px;
+        top: 0%;
+        left: 0%;
+    
+
+}
+
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+#contact-box form{
+    width: 40%;
+    border-radius: 9px;
+}
+
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: 'Bree Serif', serif;
+}
+
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.4rem;
+} 
+ 
+footer{
+    background: black;
+    color: whitesmoke;
+    padding: 9px 20px;
+}
+
+.f{
+    background-color: #efe9e9;
+    opacity: 0.7;
+    outline-style:hidden;
+}
+
+
